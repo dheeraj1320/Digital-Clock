@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Digital-7";
+  src: url("digital-7.regular.ttf");
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.time {
+  text-align: center;
+  font-size: 9em;
+  font-family: "Digital-7";
+
+  font-weight: 1000;
+  color: aqua;
+}
