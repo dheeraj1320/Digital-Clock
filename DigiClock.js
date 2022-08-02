@@ -8,3 +8,8 @@ function timeabcd() {
     hour + " : " + min + " : " + second;
 }
 setInterval(timeabcd, 1000);
+
+const settings = function () {
+  console.log("shchh");
+  document.querySelector(".rotate").classList.toggle("down");
+};

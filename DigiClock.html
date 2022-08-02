@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DigiClock</title>
     <link rel="stylesheet" href="DigiClock.css" />
-    <!-- <link href="http://fonts.cdnfonts.com/css/led-digital-7" rel="stylesheet" /> -->
-
     <script src="DigiClock.js"></script>
   </head>
 
   <body>
-    <section>
-      <span class="time"></span>
-    </section>
+    <div class="container">
+      <a href="#" onclick="settings()" class="setting"
+        ><img class="setting-logo rotate" src="white-settings-icon-1.jpg"
+      /></a>
+
+      <div class="date-time-container">
+        <span class="date">5655</span>
+
+        <div class="time-container">
+          <span class="time"></span>
+          <div class="time-label"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
