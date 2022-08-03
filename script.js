@@ -1,11 +1,13 @@
-function timeabcd() {
-  let a = new Date();
-  hour = String(a.getHours()).padStart(2, 0);
-  min = String(a.getMinutes()).padStart(2, 0);
-  second = String(a.getSeconds()).padStart(2, 0);
+// Elements
+const time_container = document.querySelector(".time");
 
-  document.querySelector(".time").textContent =
-    hour + " : " + min + " : " + second;
+function timeabcd() {
+  let date = new Date();
+  hour = String(date.getHours()).padStart(2, 0);
+  min = String(date.getMinutes()).padStart(2, 0);
+  second = String(date.getSeconds()).padStart(2, 0);
+
+  time_container.textContent = hour + " : " + min + " : " + second;
 }
 setInterval(timeabcd, 1000);
 
