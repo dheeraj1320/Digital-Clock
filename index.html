@@ -14,13 +14,18 @@
       <a href="#" onclick="settings()" class="setting"
         ><img class="setting-logo rotate" src="white-settings-icon-1.jpg"
       /></a>
-      <span class="setting-drawer">ff</span>
       <div class="date-time-container">
-        <span class="date">5655</span>
+        <a class="setting-drawer" onclick="changeFormat()">12hr format</a>
+        <span class="date"></span>
 
         <div class="time-container">
-          <div class="time"></div>
-          <div class="time-label"></div>
+          <div class="time">
+            <span class="hour timeEl"></span>
+            <span class="dots">:</span>
+            <span class="min timeEl"></span>
+            <span class="dots">:</span>
+            <span class="sec timeEl"></span>
+          </div>
         </div>
       </div>
     </div>

@@ -3,6 +3,10 @@
   src: url("digital-7.regular.ttf");
 }
 
+* {
+  color: aqua;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -31,24 +35,31 @@ body {
 .date {
   border-radius: 10px;
   padding: 0.1em 0.2em;
-  font-size: 4em;
+  font-size: 3em;
   font-family: "Digital-7";
   position: relative;
-  color: aqua;
-  bottom: 33px;
+  /* color: aqua; */
+  bottom: 85px;
 }
 
 .time {
+  display: flex;
+  justify-content: space-between;
   border: 4px solid white;
   border-radius: 10px;
   padding: 0.1em 0.2em;
-  width: 30rem;
-  font-size: 7em;
+  width: 35rem;
+  font-size: 8em;
   font-family: "Digital-7";
   font-weight: 1000;
   position: relative;
-  bottom: 90px;
-  color: aqua;
+  bottom: 110px;
+  /* color: aqua; */
+}
+
+.timeEl {
+  width: 8rem;
+  text-align: center;
 }
 
 .setting {
@@ -61,6 +72,28 @@ body {
   margin: 10px;
 }
 
+.setting-drawer {
+  position: relative;
+  visibility: hidden;
+  text-decoration: none;
+  bottom: 65px;
+  width: 85%;
+  height: 47px;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  transition: all 0.5s linear;
+}
+
+.setting-drawer.show:hover {
+  color: aqua;
+}
+
+.setting-drawer.show {
+  visibility: visible;
+  color: rgb(255, 255, 255, 1);
+}
+
 .rotate {
   -moz-transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
@@ -71,4 +104,9 @@ body {
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+/* utility classes */
+.hidden {
+  display: none;
 }
