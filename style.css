@@ -87,6 +87,7 @@ body {
 
 .setting-drawer.show:hover {
   color: aqua;
+  cursor: pointer;
 }
 
 .setting-drawer.show {
